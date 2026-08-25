@@ -1,0 +1,258 @@
+/* ==========================================
+   INVISOR LOGIN PAGE
+========================================== */
+
+.auth-overlay {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #000814 0%,
+    #001233 100%
+  );
+  color: white;
+}
+
+/* ==========================================
+   LEFT PANEL
+========================================== */
+
+.auth-left {
+  flex: 1.4;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.platform-tag {
+  color: #60a5fa;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.auth-left h1 {
+  font-size: 84px;
+  font-weight: 900;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  letter-spacing: -2px;
+}
+
+.platform-subtitle {
+  font-size: 22px;
+  color: #94a3b8;
+  margin-bottom: 50px;
+}
+
+.platform-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.platform-features div {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.platform-description {
+  max-width: 520px;
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ==========================================
+   RIGHT PANEL
+========================================== */
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.auth-modal {
+  width: 520px;
+  max-width: 100%;
+  padding: 42px;
+  border-radius: 24px;
+
+  background: rgba(15, 23, 42, 0.9);
+
+  border: 1px solid rgba(96, 165, 250, 0.15);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+}
+
+.auth-modal h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.auth-modal form {
+  width: 100%;
+}
+
+.auth-modal input {
+  width: 100%;
+  height: 60px;
+
+  padding: 0 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.05);
+
+  color: white;
+
+  font-size: 16px;
+
+  margin-bottom: 18px;
+
+  transition: all 0.25s ease;
+}
+
+.auth-modal input::placeholder {
+  color: #94a3b8;
+}
+
+.auth-modal input:focus {
+  outline: none;
+
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 0 4px rgba(59,130,246,0.15);
+}
+
+.auth-modal button {
+  width: 100%;
+  height: 60px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #3b82f6
+  );
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.auth-modal button:hover:not(:disabled) {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(37,99,235,0.35);
+}
+
+.auth-modal button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.auth-modal span {
+  color: #60a5fa;
+}
+
+.auth-modal span:hover {
+  color: #93c5fd;
+}
+
+.security-note {
+  margin-top: 28px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+  .auth-overlay {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    padding: 60px 40px;
+  }
+
+  .auth-left h1 {
+    font-size: 64px;
+  }
+
+  .platform-features div {
+    font-size: 18px;
+  }
+
+  .auth-modal {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .auth-left {
+    padding: 40px 24px;
+  }
+
+  .auth-left h1 {
+    font-size: 52px;
+  }
+
+  .platform-subtitle {
+    font-size: 18px;
+  }
+
+  .platform-features div {
+    font-size: 16px;
+  }
+
+  .auth-modal {
+    padding: 28px;
+  }
+
+  .auth-modal h2 {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,467 @@
+/* =====================================================
+   PAGE
+===================================================== */
+.eyebrow {
+
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(59,130,246,0.12);
+
+  border:
+    1px solid rgba(59,130,246,0.25);
+
+  color: #60a5fa;
+
+  letter-spacing: 2px;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.department-page {
+  padding: 30px;
+}
+
+.department-page .eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:  #4da3ff;
+  margin-bottom: 8px;
+}
+
+.department-page h1 {
+  margin-bottom: 10px;
+}
+
+.department-subtitle {
+  color:  #9fb5d1;
+  max-width: 1000px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* =====================================================
+   KPI SECTION
+===================================================== */
+
+.department-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.department-kpi {
+  background: #061327;
+  border: 1px solid #16345f;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.department-kpi.primary {
+  border-left: 5px solid #2563eb;
+}
+
+.department-kpi span {
+  font-size: 0.85rem;
+  color: #8ca6c7;
+}
+
+.department-kpi h2 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 2rem;
+}
+
+.department-kpi p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.department-card {
+  background: #061327;
+  border: 1px solid #16345f;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 25px;
+
+  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
+
+.department-card h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* =====================================================
+   GOVERNANCE LEAGUE TABLE
+===================================================== */
+
+.league-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.league-label {
+  width: 90px;
+  font-weight: 600;
+}
+
+.league-bar {
+  flex: 1;
+  height: 18px;
+  background:  #10284d;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.league-fill {
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #3b82f6,
+    #60a5fa
+  );
+}
+
+.league-score {
+  width: 60px;
+  text-align: right;
+  font-weight: 700;
+}
+
+/* =====================================================
+   HEATMAP
+===================================================== */
+
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.heatmap-box {
+  background: #08192f;
+  border: 1px solid #16345f;
+  padding: 18px;
+  text-align: center;
+  border: 1;
+  transition: all 0.2s ease;
+}
+
+.heatmap-box:hover {
+  transform: translateY(-4px);
+}
+
+.heatmap-box h4 {
+  margin-bottom: 10px;
+}
+
+.heatmap-box h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* =====================================================
+   STATUS COLOURS
+===================================================== */
+
+.heatmap-box.leading {
+  border-left: 6px solid #22c55e;
+}
+
+.heatmap-box.healthy {
+  border-left: 6px solid #3b82f6;
+}
+
+.heatmap-box.monitored {
+  border-left: 6px solid #f59e0b;
+}
+
+.heatmap-box.review-required {
+  border-left: 6px solid #fb923c;
+}
+
+.heatmap-box.escalated {
+  border-left: 6px solid #ef4444;
+}
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+.department-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.department-card thead {
+    background: #0d213f;
+
+}
+
+.department-card th {
+  text-align: left;
+  padding: 14px;
+  color: #334155;
+}
+
+.department-card td {
+  padding: 14px;
+  border-top: 1px solid #16345f ;
+}
+
+.department-card tr:hover {
+  background: rgba(77,163,255,0.08);
+}
+
+.department-page {
+  color: #ffffff;
+}
+
+.department-card td {
+  color: #ffffff;
+}
+
+.department-kpi h2 {
+  color: #ffffff;
+}
+
+.league-score {
+  color: #ffffff;
+}
+
+.heatmap-box h2 {
+  color: #ffffff;
+}
+
+.heatmap-box h4 {
+  color: #ffffff;
+}
+
+/* =====================================================
+   EXECUTIVE WATCHLIST
+===================================================== */
+
+.watchlist-high {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.watchlist-medium {
+  color: #d97706;
+  font-weight: 700;
+}
+
+.watchlist-good {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+/* =====================================================
+   EXECUTIVE INSIGHT
+===================================================== */
+
+.executive-insight {
+  border-left: 6px solid #2563eb;
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f8fafc
+  );
+}
+
+.executive-insight p {
+  line-height: 1.8;
+  color: #334155;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .department-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heatmap-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .department-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heatmap-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ==========================================
+   GOVERNANCE QUADRANT
+========================================== */
+
+.quadrant-subtitle {
+  color: #9fb5d1;
+  margin-bottom: 20px;
+}
+
+.quadrant-container {
+  position: relative;
+  height: 500px;
+  border: 1px solid #16345f;
+  border-radius: 14px;
+  background: #08192f;
+  overflow: hidden;
+}
+
+.quadrant-axis-x {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-top: 2px dashed #29476d;
+}
+
+.quadrant-axis-y {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  border-left: 2px dashed #29476d;
+}
+
+.quadrant-label {
+  position: absolute;
+  color: #9fb5d1;
+  font-weight: 600;
+}
+
+.quadrant-label.top {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quadrant-label.bottom {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quadrant-label.left {
+  left: 10px;
+  top: 50%;
+}
+
+.quadrant-label.right {
+  right: 10px;
+  top: 50%;
+}
+
+.quadrant-point {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+.quadrant-point.benchmark {
+  background: #22c55e;
+}
+
+.quadrant-point.strong {
+  background: #3b82f6;
+}
+
+.quadrant-point.healthy {
+  background: #06b6d4;
+}
+
+.quadrant-point.monitored {
+  background: #f59e0b;
+}
+
+.quadrant-point.review {
+  background: #fb923c;
+}
+
+.quadrant-point.escalated {
+  background: #ef4444;
+}
+
+.quadrant-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.quadrant-legend div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.legend {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.legend.benchmark {
+  background: #22c55e;
+}
+
+.legend.strong {
+  background: #3b82f6;
+}
+
+.legend.healthy {
+  background: #06b6d4;
+}
+
+.legend.monitored {
+  background: #f59e0b;
+}
+
+.legend.review {
+  background: #fb923c;
+}
+
+.legend.escalated {
+  background: #ef4444;
+}

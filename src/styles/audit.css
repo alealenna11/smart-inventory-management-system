@@ -1,0 +1,289 @@
+
+.eyebrow {
+
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(59,130,246,0.12);
+
+  border:
+    1px solid rgba(59,130,246,0.25);
+
+  color: #60a5fa;
+
+  letter-spacing: 2px;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+
+
+.audit-page {
+  padding: 28px;
+  background: #000814;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.sub {
+  opacity: 0.7;
+  margin-bottom: 24px;
+  color: #94a3b8;
+  max-width: 950px;
+  line-height: 1.6;
+}
+
+/* KPI */
+.audit-kpi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.kpi-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  border-color: #2563eb;
+}
+
+.kpi-card span {
+  opacity: 0.75;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.kpi-card h3 {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ALERT */
+.audit-alert {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fecaca;
+  padding: 13px 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+  font-weight: 500;
+}
+
+/* SUCCESS */
+.success-msg {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #d1fae5;
+  padding: 13px 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+/* CARD */
+.audit-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* FILTER / ACTIONS */
+.filter-card,
+.action-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* BUTTON */
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #1e293b;
+  color: white;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.active-btn,
+.primary-btn {
+  background: #2563eb;
+}
+
+.secondary-btn {
+  background: #059669;
+}
+
+.danger-btn {
+  background: #dc2626;
+}
+
+.warning-btn {
+  background: #f59e0b;
+}
+
+.reset-btn {
+  background: #64748b;
+}
+
+/* TABLE */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.table-header span {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 13px;
+  font-size: 13px;
+  opacity: 0.75;
+  border-bottom: 1px solid #1e293b;
+  color: #94a3b8;
+}
+
+td {
+  padding: 14px 13px;
+  border-bottom: 1px solid #0f172a;
+}
+
+tr {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+tr:hover {
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.selected-row {
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.mono {
+  font-family: monospace;
+}
+
+/* RISK */
+.risk.high {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.risk.medium {
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+.risk.low {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.08),
+    rgba(2, 6, 23, 1)
+  );
+}
+
+/* DETAIL */
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.detail-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.detail-item span {
+  display: block;
+  opacity: 0.65;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.recommendation-box {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.recommendation-box span {
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .audit-kpi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .audit-kpi {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-card,
+  .action-panel {
+    flex-direction: column;
+  }
+}
